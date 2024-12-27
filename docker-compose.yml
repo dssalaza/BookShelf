@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  service:
+    build: ./Service
+    container_name: service_container
+    ports:
+      - "5000:5000" # Adjust the ports as needed
+    networks:
+      - booklist_network
+
+  booklist:
+    build: ./Book-list
+    container_name: booklist_container
+    ports:
+      - "3000:80" # Adjust the ports as needed
+    networks:
+      - booklist_network
+
+networks:
+  booklist_network:
+    driver: bridge
