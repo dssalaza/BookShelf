@@ -83,3 +83,12 @@ npm run start
 
 - **Ports in use:** If ports `3000` or `5000` are already in use, stop the conflicting services or update the ports in `docker-compose.yml`.
 - **Docker issues:** Ensure Docker and Docker Compose are running and up-to-date.
+
+## TODO:
+There are a few improvements that I'd like to implement to this project:
+- [ ] Generate Swagger API documentation
+- [ ] Update README for individual projects
+- [ ] Add steps to run locally without docker
+- [ ] Spin mongo database as part of docker compose
+- [ ] Add Playwright tests
+- [x] Improve main project README
