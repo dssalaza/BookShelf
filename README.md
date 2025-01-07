@@ -43,6 +43,7 @@ Run the following command in the project root directory:
 ```bash
 docker-compose up
 ```
+Note: If it is the first time running the project then it will take some time as the images need to be build
 
 ### Access the Application
 - **Frontend (Book-list):** [http://localhost:3000](http://localhost:3000)
@@ -53,7 +54,6 @@ To stop the services, press `Ctrl+C` or run:
 ```bash
 docker-compose down
 ```
-Note: If it is the first time running the project then it will take some time as the images need to be build
 
 ## Development Notes
 
