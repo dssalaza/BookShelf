@@ -1,6 +1,11 @@
 const router = require("express").Router();
 let Book = require("../models/book.model");
 
+// @description health endpoint
+router.route("/health").get((req, res) => {
+  res.status(200).json({ status: 'OK' });
+});
+
 // @description Get all books
 router.route("/").get((req, res) => {
   Book.find()
@@ -55,10 +60,5 @@ router.route("/:id").delete((req, res) => {
     .catch((error) => res.status(400).json("Error: " + error));
 });
 
-
-// @description health endpoint
-router.route("/health").get((req, res) => {
-  res.status(200).json({ status: 'OK' });
-});
 
 module.exports = router;
