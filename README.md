@@ -88,7 +88,7 @@ npm run start
 There are a few improvements that I'd like to implement to this project:
 - [x] Improve main project README
 - [ ] Generate Swagger API documentation
-- [ ] Update README for individual projects
+- [x] Update README for individual projects
 - [ ] Add steps to run locally without docker
 - [ ] Spin Mongo database as part of docker compose
 - [ ] Add linting
